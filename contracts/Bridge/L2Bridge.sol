@@ -110,17 +110,5 @@ contract L2Bridge is Ownable {
      * @param _bridgedAmount The amount of tokens to be returned.
      * @param _layer2DepositHash The deposit hash generated on Layer 2.
      */
-    function returnTokens(
-        address _receiver,
-        uint _bridgedAmount,
-        bytes32 _layer2DepositHash
-    ) external isBridgeInitialized onlyCrossChainValidators {
-        tokenL2.burn(_bridgedAmount);
-        emit TokensReturned(
-            _receiver,
-            _layer2DepositHash,
-            _bridgedAmount,
-            block.timestamp
-        );
-    }
+
 }
