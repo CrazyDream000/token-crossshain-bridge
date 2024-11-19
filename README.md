@@ -19,5 +19,5 @@ It is important to note that the contracts are designed to be used with cross-ch
 ## Deployment of Contracts
 
 ```
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy.js    
 ```
